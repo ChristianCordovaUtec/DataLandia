@@ -73,8 +73,11 @@ Stream:
 - Paso 9.2: cruzar lotes y tiempo real
     - coincidencia útil: los eventos simulados cubren el 15 de enero de 2024, de 08:00 a 08:10, y los viajes de TLC de enero incluyen ese mismo tramo.
     - Eso permite una tabla de Gold que junte las dos fuentes por zona y minuto: cuántos viajes empezaron (lotes) y cuántos vehículos había (tiempo real). Es el cruce entre el procesamiento por lotes y el de tiempo real.
+- Paso 10.1: pruebas de calidad en dbt
+- Paso 11.1: prueba de punta a punta
+    - Un script que corra todo el flujo en orden, desde cero: generar los eventos, *Beam*, *Spark*, *dbt run* y *dbt test*,
 - 
--
+- 
 
 
 

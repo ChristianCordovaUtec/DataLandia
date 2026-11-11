@@ -1,0 +1,47 @@
+version: 2
+
+models:
+  - name: dim_zona
+    columns:
+      - name: zona_id
+        data_tests: [unique, not_null]
+
+  - name: fact_viajes
+    columns:
+      - name: inicio_viaje
+        data_tests: [not_null]
+      - name: es_valido
+        data_tests: [not_null]
+      - name: zona_origen
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_zona')
+                field: zona_id
+      - name: zona_destino
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_zona')
+                field: zona_id
+
+  - name: fact_flota_zona_minuto
+    columns:
+      - name: minuto
+        data_tests: [not_null]
+      - name: zona_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_zona')
+                field: zona_id
+
+  - name: fact_demanda_vs_flota
+    columns:
+      - name: zona_id
+        data_tests: [not_null]
+      - name: viajes_iniciados
+        data_tests: [not_null]
