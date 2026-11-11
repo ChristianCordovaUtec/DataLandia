@@ -1,2 +1,6 @@
 logs/
 *.log
+evidencias/
+*.duckdb
+datos/gold/datalandia.duckdb
+datos/bronze/yellow_tripdata_2024-01.parquet

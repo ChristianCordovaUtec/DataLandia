@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: silver
+    tables:
+      - name: viajes_tlc
+        meta:
+          external_location: "read_parquet('../datos/silver/viajes_tlc/*.parquet')"
+      - name: eventos_gps_por_zona_minuto
+        meta:
+          external_location: "read_json_auto('../datos/silver/eventos_gps_por_zona_minuto.jsonl')"
+  - name: referencia
+    tables:
+      - name: mapa_zonas
+        meta:
+          external_location: "read_csv('../datos/referencia/mapa_zonas.csv')"
