@@ -1,0 +1,30 @@
+[0m20:29:34.068503 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d4bf9ed4490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d4bf8a783d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d4bf8a7b4c0>]}
+
+
+============================== 20:29:34.071723 | 619d1eea-d8ca-40cc-a423-bcf504b9dbf6 ==============================
+[0m20:29:34.071723 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m20:29:34.072161 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'log_path': 'logs', 'indirect_selection': 'eager', 'log_format': 'default', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'empty': 'None', 'static_parser': 'True', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'debug': 'False', 'use_colors': 'True', 'version_check': 'True', 'profiles_dir': '/home/christian/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'hints_enabled': 'True', 'write_json': 'True', 'printer_width': '80', 'invocation_command': 'dbt init datalandia_dbt --skip-profile-setup', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'quiet': 'False', 'no_print': 'None', 'introspect': 'True', 'target_path': 'None'}
+[0m20:29:34.072449 [debug] [MainThread]: Tracking: tracking
+[0m20:29:34.081004 [info ] [MainThread]: Creating dbt configuration folder at /home/christian/.dbt
+[0m20:29:34.082553 [debug] [MainThread]: Starter project path: /home/christian/miniconda3/envs/datalandia/lib/python3.10/site-packages/dbt/include/starter_project
+[0m20:29:34.085681 [info ] [MainThread]: Your new dbt project "datalandia_dbt" was created!
+Initialized new project in /home/christian/others/Masters/Ciencia_Datos_IA/contenido/ciclo_5/big_data/datalandia/datalandia_dbt/datalandia_dbt
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:29:34.086951 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.07532594, "process_in_blocks": "58336", "process_kernel_time": 0.142123, "process_mem_max_rss": "102028", "process_out_blocks": "64", "process_user_time": 1.351687}
+[0m20:29:34.087478 [debug] [MainThread]: Command `dbt init` succeeded at 20:29:34.087380 after 0.08 seconds
+[0m20:29:34.087831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d4bf9ed4490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d4bf8a79810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d4bf8975c90>]}
+[0m20:29:34.088154 [debug] [MainThread]: Flushing usage events
+[0m20:29:51.852054 [debug] [MainThread]: An error was encountered while trying to flush usage events

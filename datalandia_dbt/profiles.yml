@@ -1,0 +1,7 @@
+datalandia_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: /home/christian/others/Masters/Ciencia_Datos_IA/contenido/ciclo_5/big_data/datalandia/datos/gold/datalandia.duckdb
+      threads: 1
